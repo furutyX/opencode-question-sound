@@ -11,7 +11,7 @@ opencode デスクトップアプリ（2.0.x）の標準サウンド設定には
 | 項目 | 内容 |
 | --- | --- |
 | opencode | v1 (1.18.x) / v2 (2.0.x) 両対応（dual form プラグイン） |
-| OS | **Windows のみ**（再生に PowerShell + `System.Windows.Media.MediaPlayer` を使用） |
+| OS | **Windows のみ**（再生に PowerShell + `System.Media.SoundPlayer`(WAV) を使用） |
 | フック | v2: `ctx.tool.hook("execute.before")` / v1: `"tool.execute.before"` |
 | 音源 | opencode の `@opencode-ai/ui` アセット `bip-bop-03.mp3` を同梱（MIT） |
 
@@ -46,6 +46,14 @@ opencode plugin add git+https://github.com/furutyX/opencode-question-sound.git
     `spawn` を `detached` にすると子プロセスが実行されないため採用していません。
 - 音が鳴らなくても opencode 本体の動作には影響しません。
 
+## 免責
+
+本プラグインは opencode とは無関係の**非公式なコミュニティプラグイン**です
+（opencode / anomalyco による承認・提携・サポートはありません）。
+
 ## ライセンス
 
-MIT。同梱音源 `bip-bop-03.mp3` は opencode（`@opencode-ai/ui`, MIT）のアセットです。
+本プラグインのコードは MIT です。
+
+同梱音源 `bip-bop-03`（opencode `@opencode-ai/ui`, `Copyright (c) 2025 opencode`, MIT）の
+著作権表示とライセンス全文は [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md) に記載しています。
