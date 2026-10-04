@@ -40,8 +40,10 @@ opencode plugin add git+https://github.com/furutyX/opencode-question-sound.git
 
 ## 動作
 
-- 質問ツールの実行直前に、同梱音源を `%TEMP%\opencode-question-sound.mp3` へ書き出し、
-  非表示の PowerShell 子プロセスで再生します。
+- 質問ツールの実行直前に、同梱音源を `%TEMP%\opencode-question-sound.wav` へ書き出し、
+  非表示の PowerShell 子プロセスで `System.Media.SoundPlayer` により再生します。
+  - `System.Windows.Media.MediaPlayer` は非対話プロセスで無音になることがあり、
+    `spawn` を `detached` にすると子プロセスが実行されないため採用していません。
 - 音が鳴らなくても opencode 本体の動作には影響しません。
 
 ## ライセンス

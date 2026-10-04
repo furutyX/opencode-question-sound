@@ -1,6 +1,6 @@
 {
   "name": "opencode-question-sound",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "opencode plugin: play the opencode question sound when the agent asks a question (question tool). v1/v2 dual, Windows.",
   "type": "module",
   "main": "./index.js",
