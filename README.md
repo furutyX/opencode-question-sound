@@ -19,7 +19,7 @@ Windows 以外では `process.platform` 判定により何もしません（no-o
 
 ## インストール
 
-Git リポジトリ指定でインストールできます（private リポジトリのため、git の認証情報が必要です）。
+Git リポジトリ指定でインストールできます。
 
 ```sh
 opencode plugin add git+https://github.com/furutyX/opencode-question-sound.git
