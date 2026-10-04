@@ -1,0 +1,30 @@
+{
+  "name": "opencode-question-sound",
+  "version": "1.0.0",
+  "description": "opencode plugin: play the opencode question sound when the agent asks a question (question tool). v1/v2 dual, Windows.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    "./server": "./index.js",
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "plugin",
+    "sound",
+    "notification",
+    "question"
+  ],
+  "author": "furutyX",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furutyX/opencode-question-sound.git"
+  }
+}
